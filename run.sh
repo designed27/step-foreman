@@ -8,7 +8,7 @@ if ! type heroku &> /dev/null ;
 then
     info 'heroku toolbelt not found, starting installing it'
 
-    cd $TMPDIR
+    #cd $TMPDIR
     # result=$(sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh)
 
     sudo apt-get update
