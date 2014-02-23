@@ -12,6 +12,7 @@ Based on [wercker/step-heroku-deploy](https://github.com/wercker/step-heroku-dep
 # Options
 
 *  `run` (optional) Run a command through Foreman. This option can be used to run tests with the .env file active for example.
+   
    The value supplied to `run` is injected as 'command' in `$ foreman run 'command'` 
 
 # Example
