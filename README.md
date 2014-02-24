@@ -15,6 +15,10 @@ Based on [wercker/step-heroku-deploy](https://github.com/wercker/step-heroku-dep
    
    The value supplied to `run` is injected as 'command' in `$ foreman run 'command'` 
 
+*  `options` (optional, only used with run) Inject flags before the run command.
+
+    For example, set `options: "--env .custom-env-file"` to pass any flags to `foreman`.
+
 # Example
 
 ``` yaml
@@ -29,6 +33,10 @@ deploy:
 The MIT License (MIT)
 
 # Changelog
+
+## 0.0.4
+
+* Add `options` parameter to inject any flags into the `foreman run` command.
 
 ## 0.0.3
 
