@@ -33,7 +33,7 @@ then
     if [ -n "$WERCKER_FOREMAN_OPTIONS" ]
     then
         debug "starting foreman $WERCKER_FOREMAN_OPTIONS run $run_command"
-        foreman $WERCKER_FOREMAN_OPTIONS run "$run_command"
+        foreman run $WERCKER_FOREMAN_OPTIONS "$run_command"
         exit_code_run=$?
     else
         debug "starting heroku run $run_command"

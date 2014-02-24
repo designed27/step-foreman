@@ -36,6 +36,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 0.0.6
+
+* Rearrange foreman command
+
 ## 0.0.5
 
 * run.sh bugfix
