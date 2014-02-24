@@ -2,6 +2,8 @@
 
 Install Heroku's Foreman. Optionally, run a command through foreman.
 
+Issues and Pull Requests are encouraged and welcome on [github](https://github.com/designed27/step-foreman)!
+
 Based on [wercker/step-heroku-deploy](https://github.com/wercker/step-heroku-deploy).
 
 
