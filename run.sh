@@ -29,15 +29,17 @@ fi
 
 if [ -n "$WERCKER_FOREMAN_RUN" ]
 then
-    if [ -n "$WERCKER_FOREMAN_OPTIONS" ]
-        options=""
-    then
-        options=$WERCKER_FOREMAN_OPTIONS
     run_command="$WERCKER_FOREMAN_RUN"
-
-    debug "starting heroku run $run_command"
-    foreman $options run "$run_command"
-    exit_code_run=$?
+    if [ -n "$WERCKER_FOREMAN_OPTIONS" ]
+    then
+        debug "starting foreman $WERCKER_FOREMAN_OPTIONS run $run_command"
+        foreman $WERCKER_FOREMAN_OPTIONS run "$run_command"
+        exit_code_run=$?
+    else
+        debug "starting heroku run $run_command"
+        foreman run "$run_command"
+        exit_code_run=$?
+    fi
 fi
 
 # Validate git run

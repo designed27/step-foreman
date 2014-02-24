@@ -36,6 +36,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 0.0.5
+
+* run.sh bugfix
+
 ## 0.0.4
 
 * Add `options` parameter to inject any flags into the `foreman run` command.
